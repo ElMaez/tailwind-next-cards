@@ -20,7 +20,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen grid place-content-center bg-linear-to-r/oklab from-pink-300 to-indigo-400`}
+        suppressHydrationWarning
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen grid place-content-center bg-linear-to-r/oklab from-pink-300 to-indigo-400 dark:from-slate-900 dark:to-slate-800`}
       >
         {children}
       </body>
